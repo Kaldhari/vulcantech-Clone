@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vulcantechs clone</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      * {
+         margin: 0px;
+         padding: 0px;
+      }
+
+      header {
+         height: 100vh;
+         background-size: cover;
+         width: 100%;
+         background-image: url(slider_creative.jpg);
+      }
+
+      nav {
+         width: 100%;
+         display: flex;
+         position: absolute;
+         justify-content: center;
+         text-align: center;
+      }
+
+      nav a {
+         text-decoration: none;
+         color: black;
+      }
+
+      nav img {
+         width: 150px;
+         height: 50px;
+         translate: 73%;
+      }
+
+      nav ul li {
+         position: relative;
+         display: inline-block;
+         margin: 0px 30px;
+         top: 15px;
+         list-style: none;
+         translate: 176%
+      }
+
+      .top-social {
+         padding: 14px 5px;
+         translate: 65%;
+      }
+
+      .top-social a {
+         padding: 13px;
+      }
+
+      .flex-container {
+         display: flex;
+         flex-wrap: nowrap;
+         background-color: DodgerBlue;
+         height: 500px;
+      }
+
+      .flex-container>div {
+         background-color: #f1f1f1;
+         width: 550px;
+         margin: 0px;
+         text-align: center;
+         
+         font-size: 30px;
+      }
+
+      .a1 {
+         background-image: url(img_creative_0.jpg);
+      }
+
+      .a2 {
+         background-image: url(img_creative_1.jpg);
+      }
+
+      .a3 {
+         background-image: url(img_creative_2.jpg);
+         
+      }
+
+      .flex-container1 {
+         display: flex;
+         flex-wrap: nowrap;
+         background-color: DodgerBlue;
+         height: 500px;
+      }
+
+      .flex-container1>div {
+         background-color: #f1f1f1;
+         width: 550px;
+         margin: 0px;
+         text-align: center;
+         line-height: 75px;
+         font-size: 30px;
+      }
+
+      .a4 {
+         background-image: url(img_creative_3.jpg);
+      }
+
+      .a5 {
+         background-image: url(img_creative_4.jpg);
+      }
+
+      .a6 {
+         background-image: url(img_creative_5.jpg);
+      }
+
+      .content {
+         height: 3000px;
+         width: 100%;
+         background-image: url(service_bg_creative-scaled-3.jpg);
+         background-size: cover;
+         background-position: center;
+         
+      }
+      .content .button-container{
+         text-align:center;
+         padding:10px;
+      }
+      .content .button-container p{
+            background-color:#4CAF50;
+            color:#fff;
+            padding: 15px 30px;
+            text-align:center;
+            display: inline-block;
+            border-radius:16px;
+            font-weight:bold;
+            margin-left:-64%;
+            margin-top:10%;
+            transition: background-color 0.3s;
+      }
+      .content .button-container p:hover{
+         background-color: #45a049;
+      }
+      .ma{
+         font-size:20px;
+      }
+      .xd{
+         display:flex;
+         text-align:center;
+         margin-left:245px;
+      }
+      .xd >div{
+         margin:10px;
+      }
+      .xd img{
+         border-radius:100%;
+      }
+      .xd .fa{
+         color:chartreuse;
+      }
+      .flex-container2 {
+         background-color: black;
+         height: 900px;
+         width: 100%;
+      }
+
+      .ab img {
+         height: 667px;
+         width: 824px;
+         margin-top: 102px;
+      }
+
+      .ab p {
+         font-size: 60px;
+         color: #fff;
+         margin-left: 55%;
+         margin-top: -44%;
+      }
+
+      .ac img {
+         height: 264px;
+         width: 513px;
+         margin-left: 58%;
+         margin-top: 10%;
+      }
+       .fc{
+         margin-top:6%;
+         margin-left:8%;
+         font-size:83px;
+       }
+      .ad {
+         display:flex;
+         position:relative;
+         left:102px;
+         top:183px;
+      }
+      .ad > div{
+         margin: 10px;
+      }
+      .fd {
+         display:flex;
+         position:relative;
+         left:102px;
+         top:233px;
+      }
+      .fd > div{
+         margin: 10px;
+      }
+         
+      
+      .ae {
+         display:flex;
+         position:relative;
+         height:600px;
+         width:100%;
+         margin-top:7%;
+         margin-left:1%;
+         text-align:center;
+      }
+      .ae > div{
+         margin:10px;
+      }
+      .xa{
+         display:flex;
+         margin-top:-343px;
+         margin-left:0%;
+         text-align:center;
+         height:414px;
+      }
+      .xa > div{
+         margin: 10px;
+      }
+      .gg{
+         text-align:center;
+         padding:10px;
+         height:100px;
+      }
+      .gg p{
+         background-color:#4CAF50;
+         color:#fff;
+         padding: 15px 30px;
+         text-align:center;
+         display: inline-block;
+         border-radius:50px;
+         font-weight:bold;
+         transition: background-color 0.3s;
+      }
+      .gg p:hover{
+         color:#45a049;
+      }
+      .af {
+         background-image: url(bg_creative.jpg);
+         width: 100%;
+         height: 426px;
+         background-repeat: no-repeat;
+         position:relative;
+      }
+
+      .af p {
+         font-size: 60px;
+         margin-top: -22%;
+         margin-left: 10%;
+
+      }
+      section{
+         padding: 80px 5% 70px;
+      }
+      .footer{
+         background-image:url(img_creative_4.jpg);
+         height:500px;
+         
+      }
+      .footer img{
+         height:100px;
+         width:300px;
+         margin-left: 140px;
+      }
+     .footer-content{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+      gap: 3.5rem;
+      text-decoration:none;
+     }
+     .footer-content h4{
+      color:greenyellow;
+      margin-bottom:1.5rem;
+      font-size:20px;
+     }
+     .footer-content a{
+      margin-bottom:16px;
+      flex-direction:column;
+      display: flex;
+      color: #fff;
+      text-decoration: none;
+     }
+     .footer-content p{
+      color:#fff;
+     }
+   </style>
+</head>
+
+<body style="overflow-x:hidden;">
+   <header>
+      <nav>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Products</a></li>
+         </ul>
+         <a href="clone1.html"><img src="VULCANTECHS-1.png"></a>
+         <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contacts</a></li>
+         </ul>
+         <div class="topsocial">
+            <div class="top-social">
+               <a href="#"><i class="fa fa-facebook"></i></a>
+               <a href="#"><i class="fa fa-linkedin"></i></a>
+               <a href="#"><i class="fa fa-instagram"></i></a>
+               <a href="#"><i class="fa fa-youtube"></i></a>
+               <a href="#"><i class="fa fa-search"></i></a>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <div class="flex-container">
+      <div class="a1">
+         <img src="cloud-service.png" style="height:100px;width:100px;translate:-50%;margin-bottom:-100px">
+         <p style="margin-top:25%">Cross Platform and Cloud Computing</p>
+
+         <p style="font-size:22px;text-align:center;margin-top:8%">We are a firm believer in ensuring that your B2B applications work
+            on any device, including desktops, laptops, tablets, and smartphones, and providing remote data access,
+            storage, and processing</p>
+         </p>
+      </div>
+      <div class="a2">
+
+      </div>
+      <div class="a3">
+         <img src="call-center.png" style="height:100px;width:100px;translate:-50%;margin-bottom:-100px">
+         <p style="margin-top:25%">24x7 Support Service</p>
+         <p style="font-size:22px;margin-top:8%">
+            We understand the needs and significance of a 24/7 IT support service as a business requires
+            support in local time zones. Getting help in real- 
+            time and finding solutions to any issues as soon
+            as they come up means zero downtimes 
+         </p>
+      </div>
+   </div>
+   <div class="flex-container1">
+      <div class="a4">
+
+      </div>
+      <div class="a5">
+         <img src="server.png" style="height:100px;width:100px;translate:-8%;margin-top:11px;">
+         <p style="margin-top:-28px;color:#fff">Industry 4.0</p>
+         <p style="font-size:19px;text-align:center;color:#fff;margin-top:10%;line-height:26px">We develop and support applications
+            required for
+            smart factories equipped with advanced IoT
+            devices, sensors, embedded software, and robotics that automate data collection and
+            analysis to allow for informed decision-making.
+            When combined with operational data from other
+            enterprise systems, it increases efficiency, quality,
+            and productivity</p>
+      </div>
+      <div class="a6">
+
+      </div>
+   </div>
+   <div class="content">
+      <p style="font-size:80px;position:relative;top:115px;left:153px">Ready to <span style="color:lightgreen">scale up
+         </span>your business?</p>
+      <p style="font-size:30px;margin-top:185px;margin-left:153px;position:absolute">Enterprise Solution</p>
+      <p style="margin-top:244px;margin-left:155px">
+         We understand that every business is <br>
+         different - that's why we offer a wide range of <br>
+         products for all industries. Whether you're in <br>
+         manufacturing, healthcare, or retail, we have <br>
+         a software solution that will help you <br>
+         succeed!
+      </p>
+      
+      <p style="font-size:30px;margin-top:-173px;margin-left:601px">Productivity</p>
+      <p style="margin-top:26px;margin-left:603px">
+         We know how important it is for a business <br>
+         to be productive and efficient, which is why <br>
+         we offer consultancy services to help you <br>
+         maximize productivity and efficiency. Our <br>
+         experts can offer advice on how to improve <br>
+         your workflow by automating tasks, <br>
+         embracing the power of industrial IoT, and <br>
+         more
+      </p>
+      <p style="font-size:30px;margin-top:-205px;margin-left:1028px">Automation</p>
+      <p style="margin-top:26px;margin-left:1029px">
+         We are an expert in industrial automation, <br>
+         helping businesses transform their <br>
+         processes with customized software. <br>
+         With our expertise in robotic process automation, <br>
+         we can provide the right solution for your <br>
+         industry. Increased efficiency, reduced <br>
+         human error, higher product quality,<br>
+         and production time standards
+      </p>
+      <p style="font-size:30px;margin-top:205px;margin-left:153px">Data driven strategy</p>
+      <p style="margin-top:26px;margin-left:155px">
+         VulcanTechs can help your organization <br>
+         achieve its full potential by taking care of the <br>
+         data that is most critical to your business. <br>
+         You can rely on our experience and resources <br>
+         to discover which metrics are most <br>
+         important in your situation and how best to <br>
+         set up a system that will get you the <br>
+         information you need in real-time
+      </p>
+      <p style="font-size:30px;margin-top:-212px;margin-left:601px">Supply chain solutions</p>
+      <p style="margin-top:26px;margin-left:603px">
+         Using a myriad of applications like part <br>
+         traceability systems, logistics trackers, <br>
+         blockchain, and IoT-based systems, we are <br>
+         committed to working with our partners, <br>
+         suppliers, and end-users to have a better <br>
+         understanding of their needs in an <br>
+         interconnected supply chain and deliver <br>
+         an adaptable and robust enterprise
+      </p>
+      <p style="font-size:30px;margin-top:-205px;margin-left:1028px">Technology Innovation</p>
+      <p style="margin-top:26px;margin-left:1029px">
+         Consumers, employees, and the market have <br>
+         all been forever transformed as a result of <br>
+         the pandemic, geopolitical tensions, and <br>
+         persisting inflation. We offer the right <br>
+         approach so that companies can use <br>
+         innovative technologies to overcome this <br>
+         disruption and use their investments to <br>
+         shape their future
+      </p>
+      <div class="button-container">
+         <p>View Our Core Team</p>
+      </div>
+      <div>
+         <p></p>
+      </div>
+      <p style="font-size:80px;margin-left:569px;margin-top:12%">
+         We know you <span style="color:chartreuse">work hard.</span>
+      </p>
+      <p style="margin-left:38%;margin-top:4%">
+         At VulcanTechs, we understand the importance of quality work and provide a 100% customer satisfaction <br>
+         guarantee. We provide IT consulting services to help companies grow with end-to-end solutions for our clients.
+         <br>
+         Our dedicated team of experts helps you with any type of IT systems or software needs.
+      </p>
+      <p style="font-size:20px;margin-left:38%;margin-top:5%">
+         <b>Work smarter not harder</b>
+      </p>
+      <p style="margin-left:38%;margin-top:2%">
+         We’re here to help you get back time in your day by <br>
+         taking care of all the tedious parts of your business <br>
+         so you have more time to focus on what matters most!
+      </p>
+      <p style="margin-left:38%;margin-top:2%">
+         Research and data analysis will help to get a clearer <br>
+         picture of what is happening in the industry, as well <br>
+         as identifying any potential gaps in your operations.
+      </p>
+      <p style="font-size:20px;margin-left:70%;margin-top:-13%">
+         <b>Convenience at your fingertips</b>
+      </p>
+      <p style="margin-left:70%;margin-top:2%">
+         You can stay on top of your tasks by using our IT <br>
+         consultancy services to maximize efficiency. We <br>
+         also offer industry 4.0 solutions to help you stay <br>
+         ahead of the curve. All you need to do is contact us <br>
+         for a free consultation and we’ll assess your needs <br>
+         and set up a plan for implementing our services.
+      </p>
+         <p style="margin-left:10%;margin-top:33%;font-size:80px">Awesome client <br><span style="color:chartreuse">review & comments</span></p>
+         <div class="xd">
+      
+            <div><img src="1-5.png" height="200px">
+               <p><span style="color:chartreuse">Splendid Work</span></p> <br>
+               <p>"Great job by the Vulcantechs Team. <br>Our company had an urgent requirement <br>and they delivered earlier than expected!"</p> <br>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i> <br>
+               <p><b>Mr Srujan Babu</b></p>
+            </div>
+            <div><img src="3d-women.png" height="200px">
+               <p><span style="color:chartreuse">Design-out of this world!</span></p> <br>
+               <p>Sowmya is always prompts very diligent <br>positive and "can-do" attitude when working with <br> her is contagious and creates a great working <br>enivornment of professionalism,hardwork,<br>dedication,experience and expertise made <br>working on this project more efficient</p> <br>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i> <br>
+               <p><b>Ladha,salima</b></p>
+               <p>Ford,North American Region</p>
+            </div>
+            <div><img src="1-5.png" height="200px"> <br>
+               <p><span style="color:chartreuse">Amazing service!</span></p> <br>
+               <p>Digital protag wouldn't be where it is <br> today without all of the hardwork of the team. <br>Thank you very much for all the hardwork and support</p> <br>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i>
+               <i class="fa fa-star"></i> <br>
+               <p><b>Tocco,Anthony</b></p>
+               <p>Ford,North America</p>
+            </div>
+         </div>
+   </div>
+  
+   <div class="flex-container2">
+      <div class="ab">
+         <img src="img-about-01.jpg">
+         <p>Committed to customers <br>
+            <span style="color:chartreuse"><b>satisfaction</b></span>
+         </p>
+
+      </div>
+
+   </div>
+   <p style="font-size:18px;color:#fff;margin-left:55%;margin-top:-40%">All our teams work in sync with each other right
+      from the first <br>
+      meeting to ensure a seamless and hassle-free experience to <br>
+      our clients. <br><br><br>
+      We inspire our clients to make bold decisions with creativity,<br>
+      design and analysis that helps them get that extra edge over <br>
+      the market.
+   </p>
+   <div class="ac">
+      <img src="achieve.png">
+   </div>
+   <div class="fc">
+      <p>Our dedicated <span style="color:chartreuse">core team</span></p>
+   </div>
+   <div class="ad">
+      
+      <div><img src="1.png" height="300px">
+         <p>Managing partner and co-founder</p>
+         <p><big>Yalla Ravi Teja</big></p>
+      </div>
+      <div><img src="2.png" height="300px">
+         <p>Partner and co-founder</p>
+         <p><big>Talluri Rohit kishore</big></p>
+      </div>
+      <div><img src="kishore-1.png" height="300px">
+         <p>Senior Software Developer</p>
+         <p><big>Gorrela Kishore</big></p>
+      </div>
+      <div><img src="9-1.png" height="300px">
+         <p>Quality Assurance Engineer</p>
+         <p><big>Singuru Srikanthbabu</big></p>
+      </div>
+   </div> 
+   <div class="fd">
+      <div><img src="13.png" height="300px">
+         <p>Project Manager</p>
+         <p><big>Sony Vipparthi</big></p>
+      </div>
+      <div><img src="4.png" height="300px">
+         <p>Senior software Developer</p>
+         <p><big>Rohit kumar padala</big></p>
+      </div>
+      <div><img src="14.png" height="300px">
+         <p>Software Developer</p>
+         <p><big>Rongali Surya Satya Sandeep</big></p>
+      </div>
+      <div><img src="pic.png" height="300px">
+         <p>Human Resource</p>
+         <p><big>Pattisapu Sai Venkata Sampath</big></p>
+      </div>
+   </div> 
+   <div style="margin-top:21%;margin-left:6%;font-size:80px">
+      <p>Interested in a <span style="color:lightgreen">career with us?</span></p>
+   </div>
+   <div class="ae">
+      
+      <div><img src="square.png" height="100px">
+         <p>Challenging projects</p>
+         <p>Proactively envisioned multimedia based expertise and cross-media growth strategies.</p>
+      </div>
+      <div><img src="clock.png" height="100px">
+         <p>Custom working time</p>
+         <p>Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.</p>
+      </div>
+      <div><img src="people.png" height="100px">
+         <p>Pixel perfect apps</p>
+         <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</p>
+      </div>
+      <div><img src="location.png" height="100px">
+         <p>Close to city center</p>
+         <p>Seamlessly empower fully researched growth strategies and interoperable internal or "organic" sources.</p>
+      </div>
+   </div>
+   <div class="xa">
+      
+      <div><img src="diamond.png" height="100px">
+         <p>Awesome Clients</p>
+         <p>Credibly innovate granular internal or "organic" sources whereas high standards in web-readiness.</p>
+      </div>
+      <div><img src="like.png" height="100px">
+         <p>Award winning team</p>
+         <p>Energistically scale future-proof core competencies vis-a-vis impactful experiences.</p>
+      </div>
+      <div><img src="pencil.png" height="100px">
+         <p>Great people</p>
+         <p>Phosfluorescently engage worldwide methodologies with web-enabled mobile technology.
+         </p>
+      </div>
+      <div><img src="bulb.png" height="100px">
+         <p>Creative environment</p>
+         <p>Podcasting operational change management inside of workflows to establish a framework.</p>
+      </div>
+
+   </div>
+   <div class="gg">
+      <p>Contact us anytime</p>
+   </div>
+   <div class="af">
+      <img src="bg_creative.jpg">
+      <p>Stay <span style="color:#fff"><b>Informed</b></span></p>
+      <p style="font-size:20px;margin-top:7%">Keep up with VulcanTechs and get instant news once in a while. We promise,
+         no <br>
+         spam or similar emails, just pure goodness.</p>
+         
+      
+   </div>
+   <section class="footer">
+      
+         <img src="VULCANTECHS-logo.png">
+         <div class="footer-content">
+         <div>
+            <h4>Products</h4>
+            <a href="#">Part Traceability</a> 
+            <a href="#">Logistics Tracker</a> 
+            <a href="#">Human Resource Management Tools</a> 
+            <a href="#">Inventory Management tools</a> 
+            <a href="#">Edu.Organisation Management System</a>
+            <a href="#">E-commerce</a>
+            <a href="#">Healthcare/Laboratory Management System</a>
+            <a href="#">Crypto Exchange</a>
+         </div>
+         <div>
+            <h4>Career</h4>
+            <a href="#">Our Team</a>
+            <a href="#">Join Us</a>
+         </div>
+         <div>
+            <h4>Blogs</h4>
+            <a href="#">Web3 and Blockchain:peeling Back the Layer</a>
+            <a href="#">Best Serverless Architectuers: Future of the Backend Development</a>
+            <a href="#">Web3 & Blockchain integration:Internet Digital Evolution</a>
+         </div>
+         <div>
+            <h4>
+               Subscribe
+            </h4>
+            <p>If you wish to receive our latest news in your email box, just subscribe to our newsletter. We won’t spam you, we promise!</p>
+         </div>
+         <div>
+            <h4>VulcanTechs</h4>
+            <p>VulcanTechs develops and deploys B2B solutions to various customers/clients. We have a wide ranging clientele covering Schools, Hospitals, Pathology laboratories, Colleges, SMEs, Industries etc. We specialize in delivering customized solutions with quick response times in deployment and support.</p>
+         </div>
+      </div>
+      <p style="color:#fff;margin-left:35%">Copyright by VULCANTECHS. All rights reserved.</p>
+   </section>
+</body>
+
+</html>
